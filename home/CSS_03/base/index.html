@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+             div {
+            border-radius: 5px;
+        }
+             .level1{
+                 width: 100%;
+             }
+        .level1>div {
+            border: solid black;
+            background: aqua;
+            width: 185px;
+            height: 20px;
+            float: left;
+            margin: 5px;
+            padding: 1px;
+        }
+        .level2 {
+            width: 185px;
+            display: none;
+
+        }
+        .level2 div  {
+            border: solid black;
+            background: cadetblue;
+            height: 20px;
+            padding: 1px;
+        }
+        div.level1 div:hover div.level2  {
+            display: block;
+            margin-top: 5px;
+        }
+        @media all and (max-width: 600px) {
+            .level1{
+                width: 100%;
+            }
+            .level1>div {
+                border: solid black;
+                background: chartreuse;
+                width: 250px;
+                margin: 2px;
+                padding: 1px;
+                display: inline-block;
+                height: auto;
+            }
+            .level2 {
+                width: 250px;
+                display: none;
+                position: absolute;
+            }
+            .level2 div  {
+                border: solid black;
+                background: cornflowerblue;
+                height: 20px;
+                padding: 1px;}
+            div.level1 div:hover div.level2  {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="level1">
+    <div>
+        Понедельник
+        <div class="level2">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+    </div>
+    <div>Вторник
+        <div class="level2">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+    </div>
+    <div>Среда
+        <div class="level2">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+    </div>
+    <div>Четверг
+        <div class="level2">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+    </div>
+    <div>Пятница
+        <div class="level2">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+    </div>
+    <div>Суббота
+        <div class="level2">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+    </div>
+    <div>Воскресенье
+        <div class="level2">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
