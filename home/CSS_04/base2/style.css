@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+}
+td, th{
+    padding: 3px;
+    border: 1px dashed;
+}
+table tr:nth-child(2n+1){
+    background: darkgrey;
+}
+table tr:first-child {
+    background: grey;
+    color: white;
+}
+table tr:not(:nth-child(1)) th{
+    text-align: left;
+}
+caption{
+    caption-side: bottom;
+}
+table tr:hover {
+    background: chartreuse;
+    cursor: pointer;
+    font-size: x-large;
+}

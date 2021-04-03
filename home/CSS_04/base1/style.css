@@ -1,0 +1,71 @@
+    p a[href^="https://ru.wikipedia.org/wiki/Doc"] {
+       background-image: url("pic/extref.png");
+       background-repeat: no-repeat;
+       background-position: left;
+       padding-left:20px;
+   }
+    p a[href="files/document.doc"] {
+          background-image: url("pic/logo-doc.jpg");
+          background-repeat: no-repeat;
+          background-position: right;
+          padding-right:20px;
+   }
+    p a[href^="https://ru.wikipedia.org/wiki/pdf"] {
+          background-image: url("pic/extref.png");
+          background-repeat: no-repeat;
+          background-position: left;
+          padding-left:20px;
+   }
+    p a[href="files/document.pdf"] {
+          background-image: url("pic/logo-pdf.png");
+          background-repeat: no-repeat;
+          background-position: right;
+          padding-right:20px;
+   }
+    p a[href^="https://ru.wikipedia.org/wiki/zip"] {
+          background-image: url("pic/extref.png");
+          background-repeat: no-repeat;
+          background-position: left;
+          padding-left: 20px;
+   }
+    p a[href="files/document.zip"] {
+          background-image: url("pic/logo-zip.gif");
+          background-repeat: no-repeat;
+          background-position: right;
+          padding-right: 20px;
+   }
+   ul li {
+          list-style-image: url("pic/logo-list.jpg");
+   }
+   ul li a[href="files/document.doc"]:hover {
+          background-image: url("pic/logo-doc.jpg");
+          background-repeat: no-repeat;
+          background-position: right;
+          padding-right:20px;
+   }
+    ul li a[href="files/document.pdf"]:hover {
+           background-image: url("pic/logo-pdf.png");
+           background-repeat: no-repeat;
+           background-position: right;
+           padding-right:20px;
+    }
+    ul li a[href="files/document.zip"]:hover {
+           background-image: url("pic/logo-zip.gif");
+           background-repeat: no-repeat;
+           background-position: right;
+           padding-right:20px;
+    }
+    p {
+           border-radius: 0 10px;
+           border: 1px solid;
+           padding: 10px;
+    }
+   a {
+          color: blue;
+   }
+
+
+
+
+
+
